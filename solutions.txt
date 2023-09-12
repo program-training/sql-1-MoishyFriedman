@@ -29,6 +29,8 @@ select product_id, unit_price*quantity as totalSum from order_details
 10.
 select count(category_id) from categories
 11.
+select * from products
+where discontinued = 1
 12.
 13.
 14.
