@@ -43,6 +43,8 @@ where unit_price = ( select max(unit_price) from products)
 15.
 select avg(2023 - extract(year from birth_date)) from employees
 16.
+select * from customers
+where phone like '%123%'
 17.
 18.
 19.
