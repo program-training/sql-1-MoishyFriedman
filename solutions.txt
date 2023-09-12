@@ -25,6 +25,7 @@ where units_in_stock = 0
 8.
 select avg(unit_price) from products
 9.
+select product_id, unit_price*quantity as totalSum from order_details
 10.
 11.
 12.
