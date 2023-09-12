@@ -51,6 +51,8 @@ where units_in_stock < 10 and discontinued = 0
 18.
 select min(unit_price), max(unit_price) from products
 19.
+select * from orders
+where order_date >= '1997-05-05'
 20.
 21.
 22.
