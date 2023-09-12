@@ -35,6 +35,8 @@ where discontinued = 1
 select count(order_id) from orders
 where extract(year from order_date) > '1997'
 13.
+select * from customers
+where contact_title in ('Owner', 'CEO')
 14.
 15.
 16.
