@@ -59,3 +59,5 @@ select product_name, quantity_per_unit from products
 select product_id, product_name, unit_price from products
 where unit_price > (select avg(unit_price) from products)
 22.
+select count(employee_id) as employees, city from employees
+group by city
