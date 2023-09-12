@@ -49,6 +49,7 @@ where phone like '%123%'
 select * from products
 where units_in_stock < 10 and discontinued = 0
 18.
+select min(unit_price), max(unit_price) from products
 19.
 20.
 21.
