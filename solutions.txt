@@ -56,4 +56,6 @@ where order_date >= '1997-05-05'
 20.
 select product_name, quantity_per_unit from products
 21.
+select product_id, product_name, unit_price from products
+where unit_price > (select avg(unit_price) from products)
 22.
