@@ -46,6 +46,8 @@ select avg(2023 - extract(year from birth_date)) from employees
 select * from customers
 where phone like '%123%'
 17.
+select * from products
+where units_in_stock < 10 and discontinued = 0
 18.
 19.
 20.
