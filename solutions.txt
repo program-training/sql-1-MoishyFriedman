@@ -14,8 +14,8 @@ select COUNT(ORDER_ID) AS totalOrders from orders
 group by customer_id
 5.
 select * from products
-where unit_price > 55
 order by unit_price desc
+limit 5
 6.
 7.
 8.
