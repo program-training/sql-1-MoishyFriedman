@@ -41,6 +41,7 @@ where contact_title in ('Owner', 'CEO')
 select * from products
 where unit_price = ( select max(unit_price) from products)
 15.
+select avg(2023 - extract(year from birth_date)) from employees
 16.
 17.
 18.
