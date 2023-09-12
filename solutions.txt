@@ -20,6 +20,8 @@ limit 5
 select * from employees
 where extract(year from birth_date) < '1960'
 7.
+select * from products
+where units_in_stock = 0
 8.
 9.
 10.
