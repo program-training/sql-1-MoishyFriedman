@@ -17,6 +17,8 @@ select * from products
 order by unit_price desc
 limit 5
 6.
+select * from employees
+where extract(year from birth_date) < '1960'
 7.
 8.
 9.
