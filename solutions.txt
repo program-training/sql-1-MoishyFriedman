@@ -54,5 +54,6 @@ select min(unit_price), max(unit_price) from products
 select * from orders
 where order_date >= '1997-05-05'
 20.
+select product_name, quantity_per_unit from products
 21.
 22.
