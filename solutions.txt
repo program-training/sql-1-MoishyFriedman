@@ -38,6 +38,8 @@ where extract(year from order_date) > '1997'
 select * from customers
 where contact_title in ('Owner', 'CEO')
 14.
+select * from products
+where unit_price = ( select max(unit_price) from products)
 15.
 16.
 17.
