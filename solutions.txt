@@ -4,6 +4,8 @@
 select product_id, product_name, category_id  from Products
 where unit_price > 50
 2.
+select * from customers
+where country like 'Germany' 
 3.
 4.
 5.
