@@ -32,6 +32,8 @@ select count(category_id) from categories
 select * from products
 where discontinued = 1
 12.
+select count(order_id) from orders
+where extract(year from order_date) > '1997'
 13.
 14.
 15.
