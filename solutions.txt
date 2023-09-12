@@ -10,6 +10,8 @@ where country like 'Germany'
 select * from orders
 where customer_id like 'ALFKI' 
 4.
+select COUNT(ORDER_ID) AS totalOrders from orders
+group by customer_id
 5.
 6.
 7.
