@@ -7,6 +7,8 @@ where unit_price > 50
 select * from customers
 where country like 'Germany' 
 3.
+select * from orders
+where customer_id like 'ALFKI' 
 4.
 5.
 6.
