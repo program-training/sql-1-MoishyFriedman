@@ -1,24 +1,63 @@
 את הפתרונות שלכם תכתבו כאן, אחרי כל שאלה, תעשו קומיט.
 
 1.
+select product_id, product_name, category_id  from Products
+where unit_price > 50
 2.
+select * from customers
+where country like 'Germany' 
 3.
+select * from orders
+where customer_id like 'ALFKI' 
 4.
+select COUNT(ORDER_ID) AS totalOrders from orders
+group by customer_id
 5.
+select * from products
+order by unit_price desc
+limit 5
 6.
+select * from employees
+where extract(year from birth_date) < '1960'
 7.
+select * from products
+where units_in_stock = 0
 8.
+select avg(unit_price) from products
 9.
+select product_id, unit_price*quantity as totalSum from order_details
 10.
+select count(category_id) from categories
 11.
+select * from products
+where discontinued = 1
 12.
+select count(order_id) from orders
+where extract(year from order_date) > '1997'
 13.
+select * from customers
+where contact_title in ('Owner', 'CEO')
 14.
+select * from products
+where unit_price = ( select max(unit_price) from products)
 15.
+select avg(2023 - extract(year from birth_date)) from employees
 16.
+select * from customers
+where phone like '%123%'
 17.
+select * from products
+where units_in_stock < 10 and discontinued = 0
 18.
+select min(unit_price), max(unit_price) from products
 19.
+select * from orders
+where order_date >= '1997-05-05'
 20.
+select product_name, quantity_per_unit from products
 21.
+select product_id, product_name, unit_price from products
+where unit_price > (select avg(unit_price) from products)
 22.
+select count(employee_id) as employees, city from employees
+group by city
